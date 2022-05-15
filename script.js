@@ -94,7 +94,7 @@ btnHold.addEventListener('click',function(){
         document.getElementById(`score--${activePlayer}`).textContent = scores[activePlayer];
 
         //check if player's score more than 100
-        if (scores[activePlayer] >= 10){
+        if (scores[activePlayer] >= 100){
             playing = false;
             dice.classList.add('hidden');
             document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
